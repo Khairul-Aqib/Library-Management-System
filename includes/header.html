@@ -1,0 +1,25 @@
+<head>
+	<title>Community Library System</title>
+	<link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<div class="header">
+	<div class="logo">
+		<img src="assets/LOGOCYBERIA.png" alt="CyberiaLibrary Logo" class="header-logo">
+	</div>
+	<div class="nav-links">
+		<a style="text-decoration: none;" href="homepage.php">HOME</a> <a> | </a>
+		<a style="text-decoration: none;" href="borrow_book.php">BROWSE BOOKS</a> <a> | </a>
+		<a style="text-decoration: none;" href="TrendingBooks.php">TRENDING</a> <a> | </a>
+		<a style="text-decoration: none;" href="userprofile.php">PROFILE</a> <a> | </a>
+
+		<?php if (basename($_SERVER['PHP_SELF']) == '!Login.php'): ?>
+			<a style="text-decoration: none;" href="!Registerform.php">REGISTER</a> <a> | </a>
+		<?php endif; ?>
+
+		<?php if (isset($_SESSION['email'])): ?>
+			<a style="text-decoration: none;" href="logout.php">LOGOUT</a> <a> | </a>
+		<?php endif; ?>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+# ── Database connection / credentials (do NOT commit) ──
+mysqli_connect.php
+config.php
+db.php
+connection.php
+database.php
+
+# Real database dump containing user PII / password hashes
+library_management.sql
+
+# Environment files
+*.env
+.env
+
+# Documentation (per project preference)
+*.md
+
+# Dependencies
+vendor/
+
+# Logs
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
